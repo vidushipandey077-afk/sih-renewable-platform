@@ -1,0 +1,149 @@
+.feasibility-page {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #1B2A2F;
+}
+
+.feasibility-page h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.feasibility-page .subtitle {
+  color: #6B7573;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.form-card {
+  background: #F6F4EF;
+  border: 1px solid #E4DFD5;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  font-size: 13px;
+  color: #4A524F;
+  margin-bottom: 6px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #D6D0C4;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: white;
+}
+
+.field input:focus {
+  outline: 2px solid #E8A33D;
+  outline-offset: 1px;
+  border-color: #E8A33D;
+}
+
+.field-row {
+  display: flex;
+  gap: 12px;
+}
+
+.field-row .field {
+  flex: 1;
+}
+
+.calculate-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1B2A2F;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.calculate-btn:hover {
+  background: #2F6F5E;
+}
+
+.calculate-btn:disabled {
+  background: #A8A8A8;
+  cursor: not-allowed;
+}
+
+.result-panel {
+  margin-top: 24px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #E4DFD5;
+}
+
+.result-hero {
+  background: #1B2A2F;
+  color: white;
+  padding: 24px;
+  text-align: left;
+}
+
+.result-hero .hero-number {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #E8A33D;
+  line-height: 1;
+}
+
+.result-hero .hero-label {
+  font-size: 13px;
+  color: #C8CCCB;
+  margin-top: 6px;
+}
+
+.result-details {
+  background: white;
+  padding: 20px 24px;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #F0EDE6;
+  font-size: 14px;
+}
+
+.result-row:last-child {
+  border-bottom: none;
+}
+
+.result-row .label {
+  color: #6B7573;
+}
+
+.result-row .value {
+  font-weight: 600;
+  color: #1B2A2F;
+}
+
+.recommended-badge {
+  display: inline-block;
+  background: #2F6F5E;
+  color: white;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-top: 6px;
+}
