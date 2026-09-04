@@ -2,13 +2,14 @@ const express = require('express');
 const router = express.Router();
 const calculateFeasibility = require('../services/feasibilityCalculator');
 const getClimateData = require('../services/nasaService');
+const getCoordinates = require('../services/geocodeService');
 
 router.post('/', async (req, res) => {
   try {
-    const { location, area, tariff, operatingStart, operatingEnd } = req.body;
+    const { address, area, tariff, operatingStart, operatingEnd } = req.body;
 
-    // location se lat aur lon nikal rahe hain
-    const { lat, lon } = location;
+    // Address se lat-long nikalo
+    const { lat, lon } = await getCoordinates(address);
 
     // NASA se climate data lao
     const climate = await getClimateData(lat, lon);
@@ -26,13 +27,14 @@ router.post('/', async (req, res) => {
     // Response bhejo
     res.json({
       success: true,
+      coordinates: { lat, lon },
       climate,
       result
     });
 
   } catch (error) {
     console.error(error);
-    res.status(500).json({ success: false, message: "Kuch galat ho gaya" });
+    res.status(500).json({ success: false, message: error.message || "Kuch galat ho gaya" });
   }
 });
 
