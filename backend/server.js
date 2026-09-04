@@ -7,6 +7,9 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
+const feasibilityRoute = require('./routes/feasibility');
+app.use('/api/feasibility', feasibilityRoute);
+
 app.get('/', (req, res) => {
   res.send('Backend is running!');
 });

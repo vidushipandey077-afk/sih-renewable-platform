@@ -1,5 +1,5 @@
-// Constants (fixed values, kabhi mat badalna)
-const performanceRatio = 0.77;
+// Constants (fixed values)
+const performanceRatio = 0.77;        
 const windCapacityFactor = 0.22;
 const costPerKw = 50000;
 const discountRate = 0.08;
@@ -19,7 +19,6 @@ function calculateFeasibility(area, irradiance, windSpeed, tariff, operatingStar
   else if (windSpeed >= 4.0) windViability = "Marginal";
 
   // Step 4: Annual Wind Generation (agar viable ho)
-    // Step 4: Annual Wind Generation (agar viable ho)
   let annualWindGeneration = 0;
   let adjustedCapacityFactor = 0;
 
