@@ -1,65 +1,52 @@
-import { useState } from 'react';
-import HomePage from './HomePage';
-import FeasibilityPage from './FeasibilityPage';
-import VendorPage from './VendorPage';
+const express = require('express');
+const cors = require('cors');
 
-function App() {
-  const [currentPage, setCurrentPage] =
-    useState('home');
+const app = express();
+const PORT = 5001;
 
-  function goHome() {
-    setCurrentPage('home');
-  }
-
-  return (
-    <div>
-
-      {/* HOME */}
-
-      {currentPage === 'home' && (
-        <HomePage
-          onNavigate={setCurrentPage}
-        />
-      )}
+app.use(cors());
+app.use(express.json());
 
 
-      {/* FEASIBILITY */}
+// ==========================================
+// FEASIBILITY ROUTE
+// ==========================================
 
-      {currentPage === 'feasibility' && (
+const feasibilityRoute = require('./routes/feasibility');
 
-        <div
-          style={{
-            maxWidth: '480px',
-            margin: '20px auto'
-          }}
-        >
-
-          <button
-            className="back-button"
-            onClick={goHome}
-          >
-            ← Back to Home
-          </button>
-
-          <FeasibilityPage />
-
-        </div>
-
-      )}
+app.use(
+  '/api/feasibility',
+  feasibilityRoute
+);
 
 
-      {/* VENDORS */}
+// ==========================================
+// VENDORS ROUTE
+// ==========================================
 
-      {currentPage === 'vendors' && (
+const vendorsRoute = require('./routes/vendors');
 
-        <VendorPage
-          onBack={goHome}
-        />
+app.use(
+  '/api/vendors',
+  vendorsRoute
+);
 
-      )}
 
-    </div>
+// ==========================================
+// HOME TEST ROUTE
+// ==========================================
+
+app.get('/', (req, res) => {
+  res.send('Backend is running!');
+});
+
+
+// ==========================================
+// START SERVER
+// ==========================================
+
+app.listen(PORT, () => {
+  console.log(
+    `Server chal raha hai: http://localhost:${PORT}`
   );
-}
-
-export default App;
+});
