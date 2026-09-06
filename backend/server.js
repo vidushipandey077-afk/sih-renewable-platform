@@ -1,19 +1,65 @@
-const express = require('express');
-const cors = require('cors');
+import { useState } from 'react';
+import HomePage from './HomePage';
+import FeasibilityPage from './FeasibilityPage';
+import VendorPage from './VendorPage';
 
-const app = express();
-const PORT = 5001;
+function App() {
+  const [currentPage, setCurrentPage] =
+    useState('home');
 
-app.use(cors());
-app.use(express.json());
+  function goHome() {
+    setCurrentPage('home');
+  }
 
-const feasibilityRoute = require('./routes/feasibility');
-app.use('/api/feasibility', feasibilityRoute);
+  return (
+    <div>
 
-app.get('/', (req, res) => {
-  res.send('Backend is running!');
-});
+      {/* HOME */}
 
-app.listen(PORT, () => {
-  console.log(`Server chal raha hai: http://localhost:${PORT}`);
-});
+      {currentPage === 'home' && (
+        <HomePage
+          onNavigate={setCurrentPage}
+        />
+      )}
+
+
+      {/* FEASIBILITY */}
+
+      {currentPage === 'feasibility' && (
+
+        <div
+          style={{
+            maxWidth: '480px',
+            margin: '20px auto'
+          }}
+        >
+
+          <button
+            className="back-button"
+            onClick={goHome}
+          >
+            ← Back to Home
+          </button>
+
+          <FeasibilityPage />
+
+        </div>
+
+      )}
+
+
+      {/* VENDORS */}
+
+      {currentPage === 'vendors' && (
+
+        <VendorPage
+          onBack={goHome}
+        />
+
+      )}
+
+    </div>
+  );
+}
+
+export default App;

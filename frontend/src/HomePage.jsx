@@ -35,7 +35,7 @@ function HomePage({ onNavigate }) {
         </div>
       </div>
 
-      <div className="vendor-card module-card" >
+      <div onClick={() => onNavigate('vendors')} className="vendor-card module-card" >
           <h3>Find Vendors</h3>
           <p>Compare quotes from trusted solar providers across India.</p>
           <span className="status-tag ready">Ready</span>

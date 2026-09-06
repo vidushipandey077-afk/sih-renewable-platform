@@ -1,0 +1,1419 @@
+/* =========================================================
+   RENEWABLE ENERGY ADVISOR
+   VENDOR PAGE
+   Completely isolated styles
+========================================================= */
+
+
+/* =========================================================
+   PAGE RESET
+========================================================= */
+
+.rea-vendors-page {
+  width: 100%;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0 0 90px 0;
+
+  background:
+    radial-gradient(
+      circle at 12% 0%,
+      rgba(225, 158, 66, 0.10),
+      transparent 30%
+    ),
+    #0c0d12;
+
+  color: #f5f1e9;
+
+  overflow: visible;
+
+  position: relative;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* Make sure nothing from another CSS
+   interferes with this page */
+
+.rea-vendors-page *,
+.rea-vendors-page *::before,
+.rea-vendors-page *::after {
+  box-sizing: border-box;
+
+  max-height: none;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.rea-vendors-topbar {
+  width: min(
+    1120px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+
+  padding: 22px 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.rea-vendors-back {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 0;
+
+  padding: 9px 14px;
+
+  border:
+    1px solid #38373d;
+
+  border-radius: 9px;
+
+  background:
+    rgba(255, 255, 255, 0.02);
+
+  color: #bdb9b1;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+}
+
+.rea-vendors-back:hover {
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  color: #ffffff;
+
+  border-color: #55535b;
+}
+
+.rea-vendors-brand {
+  margin: 0;
+
+  padding: 0;
+
+  color: #f1eee7;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.rea-vendors-hero {
+  width: min(
+    1120px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+
+  padding: 70px 0 50px;
+}
+
+.rea-vendors-hero-inner {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.rea-vendors-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  padding: 7px 12px;
+
+  border: 1px solid rgba(226, 164, 74, 0.38);
+
+  border-radius: 999px;
+
+  background: rgba(226, 164, 74, 0.04);
+
+  color: #e4a652;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.rea-vendors-hero h1 {
+  display: block;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #f5f1e9;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(42px, 6vw, 70px);
+
+  line-height: 1.04;
+
+  letter-spacing: -2.5px;
+
+  font-weight: 700;
+}
+
+.rea-vendors-hero h1 span {
+  color: #e0a253;
+}
+
+.rea-vendors-hero p {
+  width: 100%;
+
+  max-width: 680px;
+
+  margin: 24px auto 0;
+
+  padding: 0;
+
+  color: #9d9a94;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   FORM SECTION
+========================================================= */
+
+.rea-vendors-form-section {
+  width: min(
+    1120px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+
+  padding: 0 0 55px 0;
+}
+
+.rea-vendors-form-card {
+  display: block;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 38px;
+
+  background: #f6f4ef;
+
+  color: #292723;
+
+  border:
+    1px solid #ded8cd;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 24px 70px
+    rgba(0, 0, 0, 0.28);
+
+  position: relative;
+
+  overflow: visible;
+}
+
+
+/* =========================================================
+   FORM HEADING
+========================================================= */
+
+.rea-vendors-form-heading {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  text-align: center;
+}
+
+.rea-vendors-form-heading span {
+  display: block;
+
+  margin: 0 0 9px 0;
+
+  color: #9a7141;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.rea-vendors-form-heading h2 {
+  margin: 0;
+
+  padding: 0;
+
+  color: #292723;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 31px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+}
+
+.rea-vendors-form-heading p {
+  margin: 12px 0 0 0;
+
+  padding: 0;
+
+  color: #817c73;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.rea-vendors-form {
+  width: 100%;
+
+  margin: 34px 0 0 0;
+
+  padding: 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   FORM FIELD
+========================================================= */
+
+.rea-vendors-field {
+  width: 100%;
+
+  min-width: 0;
+
+  margin: 0;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.rea-vendors-field label {
+  display: block;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #302e2a;
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+.rea-vendors-field small {
+  display: block;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #969087;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.rea-vendors-field input,
+.rea-vendors-field select {
+  display: block;
+
+  width: 100%;
+
+  height: 48px;
+
+  min-height: 48px;
+
+  margin: 0;
+
+  padding: 0 14px;
+
+  border:
+    1px solid #d8d2c8;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  background: #fffefa;
+
+  color: #292723;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  box-shadow: none;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+}
+
+.rea-vendors-field input::placeholder {
+  color: #a8a49e;
+
+  opacity: 1;
+}
+
+.rea-vendors-field input:focus,
+.rea-vendors-field select:focus {
+  border-color: #d79b4d;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(215, 155, 77, 0.12);
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.rea-vendors-select-wrapper {
+  width: 100%;
+
+  position: relative;
+}
+
+.rea-vendors-select-wrapper::after {
+  content: "";
+
+  position: absolute;
+
+  right: 15px;
+
+  top: 50%;
+
+  width: 8px;
+
+  height: 8px;
+
+  border-right:
+    1.7px solid #777269;
+
+  border-bottom:
+    1.7px solid #777269;
+
+  transform:
+    translateY(-65%)
+    rotate(45deg);
+
+  pointer-events: none;
+}
+
+.rea-vendors-field select {
+  padding-right: 42px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   CAPACITY
+========================================================= */
+
+.rea-vendors-unit-input {
+  position: relative;
+
+  width: 100%;
+}
+
+.rea-vendors-unit-input input {
+  padding-right: 52px;
+}
+
+.rea-vendors-unit-input span {
+  position: absolute;
+
+  right: 15px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #777269;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CURRENCY
+========================================================= */
+
+.rea-vendors-currency-input {
+  position: relative;
+
+  width: 100%;
+}
+
+.rea-vendors-currency-input span {
+  position: absolute;
+
+  left: 15px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #777269;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  pointer-events: none;
+}
+
+.rea-vendors-currency-input input {
+  padding-left: 38px;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.rea-vendors-submit {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 100%;
+
+  height: 50px;
+
+  min-height: 50px;
+
+  grid-column: 1 / -1;
+
+  margin: 3px 0 0 0;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #2e6251;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.rea-vendors-submit:hover {
+  background: #285746;
+
+  transform: translateY(-2px);
+}
+
+.rea-vendors-submit:disabled {
+  opacity: 0.65;
+
+  cursor: wait;
+
+  transform: none;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.rea-vendors-error {
+  width: min(
+    1120px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto 30px;
+
+  padding: 15px 20px;
+
+  border:
+    1px solid
+    rgba(204, 82, 82, 0.32);
+
+  border-radius: 11px;
+
+  background:
+    rgba(128, 33, 33, 0.14);
+
+  color: #e5aaaa;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   RESULTS
+========================================================= */
+
+.rea-vendors-results {
+  width: min(
+    1120px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+
+  padding: 20px 0 0 0;
+}
+
+.rea-vendors-results-heading {
+  width: 100%;
+
+  margin: 0 0 28px 0;
+
+  padding: 0;
+}
+
+.rea-vendors-results-heading > span {
+  display: block;
+
+  margin: 0;
+
+  color: #b07c3d;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.rea-vendors-results-heading h2 {
+  margin: 7px 0 5px 0;
+
+  padding: 0;
+
+  color: #f4f1eb;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 32px;
+
+  line-height: 1.2;
+}
+
+.rea-vendors-results-heading p {
+  margin: 0;
+
+  padding: 0;
+
+  color: #88847e;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   VENDOR GRID
+========================================================= */
+
+.rea-vendors-grid {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   VENDOR CARD
+========================================================= */
+
+.rea-vendor-card {
+  display: block;
+
+  width: 100%;
+
+  min-width: 0;
+
+  min-height: 0;
+
+  height: auto;
+
+  margin: 0;
+
+  padding: 25px;
+
+  position: relative;
+
+  overflow: visible;
+
+  background: #f7f5f0;
+
+  color: #292724;
+
+  border:
+    1px solid #ded8ce;
+
+  border-left:
+    4px solid #e4a047;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 7px 24px
+    rgba(0, 0, 0, 0.08);
+}
+
+.rea-vendor-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 40px
+    rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================================
+   VENDOR HEADER
+========================================================= */
+
+.rea-vendor-header {
+  display: flex;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.rea-vendor-logo {
+  flex: 0 0 54px;
+
+  width: 54px;
+
+  height: 54px;
+
+  min-height: 54px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 0;
+
+  padding: 0;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e4a24d,
+      #b9782c
+    );
+
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 24px;
+
+  font-weight: 700;
+}
+
+.rea-vendor-title {
+  flex: 1;
+
+  min-width: 0;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.rea-vendor-title h3 {
+  margin: 0;
+
+  padding: 0;
+
+  color: #292724;
+
+  font-family: inherit;
+
+  font-size: 18px;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+
+  overflow-wrap: anywhere;
+}
+
+.rea-vendor-title p {
+  margin: 5px 0 0 0;
+
+  padding: 0;
+
+  color: #817c73;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.rea-vendor-rating-row {
+  display: flex;
+
+  width: 100%;
+
+  margin: 18px 0 0 0;
+
+  padding: 0 0 15px 0;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  border-bottom:
+    1px solid #e2ddd5;
+}
+
+.rea-vendor-rating {
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 5px;
+
+  color: #35322e;
+
+  font-size: 13px;
+}
+
+.rea-vendor-star {
+  color: #df9d3b;
+
+  font-size: 16px;
+
+  line-height: 1;
+}
+
+.rea-vendor-rating span:last-child {
+  color: #89847c;
+}
+
+.rea-vendor-match {
+  flex: 0 0 auto;
+
+  padding: 7px 10px;
+
+  border-radius: 999px;
+
+  background: #e9f1e9;
+
+  color: #397050;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   VERIFIED
+========================================================= */
+
+.rea-vendor-verified {
+  display: inline-flex;
+
+  align-items: center;
+
+  margin: 14px 0 0 0;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  background: #e7f1e9;
+
+  color: #39704e;
+
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.rea-vendor-description {
+  display: block;
+
+  width: 100%;
+
+  margin: 17px 0;
+
+  padding: 0;
+
+  color: #6f6a62;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+  overflow-wrap: break-word;
+
+  word-break: normal;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.rea-vendor-stats {
+  display: grid;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 16px 0;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 12px;
+
+  border-top:
+    1px solid #e1dcd3;
+
+  border-bottom:
+    1px solid #e1dcd3;
+}
+
+.rea-vendor-stats > div {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.rea-vendor-stats span {
+  margin: 0;
+
+  color: #9a958c;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.rea-vendor-stats strong {
+  margin: 0;
+
+  color: #302d29;
+
+  font-size: 12px;
+
+  line-height: 1.35;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.rea-vendor-services {
+  display: flex;
+
+  width: 100%;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin: 17px 0;
+
+  padding: 0;
+}
+
+.rea-vendor-services span {
+  display: inline-flex;
+
+  align-items: center;
+
+  margin: 0;
+
+  padding: 7px 10px;
+
+  border-radius: 7px;
+
+  background: #ebe8e2;
+
+  color: #68645e;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.rea-vendor-contact {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 17px 0 0 0;
+
+  border-top:
+    1px solid #e1dcd3;
+}
+
+.rea-vendor-contact-info {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 6px;
+
+  margin: 0 0 15px 0;
+
+  padding: 0;
+}
+
+.rea-vendor-contact-info a {
+  display: block;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #77736c;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  overflow-wrap: anywhere;
+}
+
+.rea-vendor-contact-buttons {
+  display: flex;
+
+  width: 100%;
+
+  gap: 8px;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.rea-vendor-call,
+.rea-vendor-contact-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 43px;
+
+  margin: 0;
+
+  padding: 11px 14px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.rea-vendor-call {
+  flex: 0 0 auto;
+
+  min-width: 72px;
+
+  border:
+    1px solid #d6d0c5;
+
+  background: #fbf9f4;
+
+  color: #45413b;
+}
+
+.rea-vendor-contact-button {
+  flex: 1;
+
+  border:
+    1px solid #2e6251;
+
+  background: #2e6251;
+
+  color: #ffffff;
+}
+
+.rea-vendor-call:hover,
+.rea-vendor-contact-button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.rea-vendors-empty {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 70px 25px;
+
+  border:
+    1px solid #28282e;
+
+  border-radius: 16px;
+
+  background:
+    rgba(255, 255, 255, 0.025);
+
+  text-align: center;
+}
+
+.rea-vendors-empty-icon {
+  margin: 0 0 13px 0;
+
+  font-size: 38px;
+}
+
+.rea-vendors-empty h3 {
+  margin: 0 0 8px 0;
+
+  color: #f4f1eb;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 24px;
+}
+
+.rea-vendors-empty p {
+  max-width: 470px;
+
+  margin: 0 auto;
+
+  color: #89857e;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .rea-vendors-form {
+    grid-template-columns: 1fr;
+  }
+
+  .rea-vendors-submit {
+    grid-column: auto;
+  }
+
+  .rea-vendors-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .rea-vendors-topbar,
+  .rea-vendors-hero,
+  .rea-vendors-form-section,
+  .rea-vendors-results,
+  .rea-vendors-error {
+    width: calc(100% - 28px);
+  }
+
+  .rea-vendors-hero {
+    padding: 45px 0 35px;
+  }
+
+  .rea-vendors-hero h1 {
+    font-size: 42px;
+
+    letter-spacing: -1.7px;
+  }
+
+  .rea-vendors-hero p {
+    font-size: 15px;
+  }
+
+  .rea-vendors-form-card {
+    padding: 23px;
+
+    border-radius: 16px;
+  }
+
+  .rea-vendors-form-heading h2 {
+    font-size: 26px;
+  }
+
+  .rea-vendors-results-heading h2 {
+    font-size: 27px;
+  }
+
+  .rea-vendor-card {
+    padding: 21px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .rea-vendors-brand {
+    display: none;
+  }
+
+  .rea-vendors-hero h1 {
+    font-size: 38px;
+  }
+
+  .rea-vendors-form-card {
+    padding: 18px;
+  }
+
+  .rea-vendor-card {
+    padding: 18px;
+  }
+
+  .rea-vendor-rating-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .rea-vendor-match {
+    align-self: flex-start;
+  }
+
+  .rea-vendor-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .rea-vendor-contact-buttons {
+    flex-direction: column;
+  }
+
+  .rea-vendor-call,
+  .rea-vendor-contact-button {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "name": "SunVolt Energy",
+    "location": "Jaipur, Rajasthan",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "rating": 4.8,
+    "reviews": 146,
+    "experience": 9,
+    "projectsCompleted": 840,
+    "minCapacity": 3,
+    "maxCapacity": 500,
+    "description": "End-to-end solar EPC provider specializing in rooftop and commercial solar installations.",
+    "services": [
+      "Rooftop Solar",
+      "Net Metering",
+      "EPC",
+      "Maintenance"
+    ],
+    "phone": "+91 9876543210",
+    "email": "sales@sunvoltenergy.example",
+    "systemTypes": [
+      "Solar Rooftop",
+      "Commercial Solar",
+      "Industrial Solar"
+    ],
+    "projectTypes": [
+      "Residential",
+      "Commercial",
+      "Industrial"
+    ],
+    "cities": [
+      "Jaipur",
+      "Ajmer",
+      "Jodhpur",
+      "Kota",
+      "Udaipur"
+    ],
+    "verified": true
+  },
+  {
+    "id": 2,
+    "name": "GreenRay Solar",
+    "location": "Delhi NCR",
+    "city": "Delhi",
+    "state": "Delhi",
+    "rating": 4.7,
+    "reviews": 212,
+    "experience": 11,
+    "projectsCompleted": 1250,
+    "minCapacity": 2,
+    "maxCapacity": 1000,
+    "description": "Experienced solar solutions company serving residential, commercial and industrial customers.",
+    "services": [
+      "Solar Rooftop",
+      "Battery Storage",
+      "EPC",
+      "AMC"
+    ],
+    "phone": "+91 9876543211",
+    "email": "hello@greenraysolar.example",
+    "systemTypes": [
+      "Solar Rooftop",
+      "Commercial Solar",
+      "Industrial Solar",
+      "Solar + Battery"
+    ],
+    "projectTypes": [
+      "Residential",
+      "Commercial",
+      "Industrial",
+      "Agricultural"
+    ],
+    "cities": [
+      "Delhi",
+      "Noida",
+      "Gurgaon",
+      "Faridabad",
+      "Ghaziabad"
+    ],
+    "verified": true
+  },
+  {
+    "id": 3,
+    "name": "SolarNest Technologies",
+    "location": "Ahmedabad, Gujarat",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "rating": 4.9,
+    "reviews": 98,
+    "experience": 7,
+    "projectsCompleted": 530,
+    "minCapacity": 1,
+    "maxCapacity": 300,
+    "description": "Solar installation specialists focused on efficient rooftop systems and customised energy solutions.",
+    "services": [
+      "Rooftop Solar",
+      "Site Survey",
+      "Installation",
+      "Monitoring"
+    ],
+    "phone": "+91 9876543212",
+    "email": "contact@solarnest.example",
+    "systemTypes": [
+      "Solar Rooftop",
+      "Commercial Solar"
+    ],
+    "projectTypes": [
+      "Residential",
+      "Commercial"
+    ],
+    "cities": [
+      "Ahmedabad",
+      "Surat",
+      "Vadodara",
+      "Rajkot"
+    ],
+    "verified": true
+  },
+  {
+    "id": 4,
+    "name": "Radiant Renewable",
+    "location": "Mumbai, Maharashtra",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "rating": 4.6,
+    "reviews": 187,
+    "experience": 10,
+    "projectsCompleted": 910,
+    "minCapacity": 5,
+    "maxCapacity": 750,
+    "description": "Renewable energy company providing rooftop, industrial and large-scale solar EPC services.",
+    "services": [
+      "Industrial Solar",
+      "EPC",
+      "Solar Design",
+      "AMC"
+    ],
+    "phone": "+91 9876543213",
+    "email": "projects@radiantrenewable.example",
+    "systemTypes": [
+      "Commercial Solar",
+      "Industrial Solar",
+      "Ground Mounted"
+    ],
+    "projectTypes": [
+      "Commercial",
+      "Industrial"
+    ],
+    "cities": [
+      "Mumbai",
+      "Pune",
+      "Nashik",
+      "Nagpur"
+    ],
+    "verified": true
+  },
+  {
+    "id": 5,
+    "name": "EcoSpark Energy",
+    "location": "Bengaluru, Karnataka",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "rating": 4.8,
+    "reviews": 122,
+    "experience": 8,
+    "projectsCompleted": 670,
+    "minCapacity": 2,
+    "maxCapacity": 400,
+    "description": "Clean-energy installer offering solar solutions for homes, offices, factories and farms.",
+    "services": [
+      "Residential Solar",
+      "Battery Storage",
+      "Net Metering",
+      "Maintenance"
+    ],
+    "phone": "+91 9876543214",
+    "email": "support@ecospark.example",
+    "systemTypes": [
+      "Solar Rooftop",
+      "Solar + Battery",
+      "Commercial Solar"
+    ],
+    "projectTypes": [
+      "Residential",
+      "Commercial",
+      "Agricultural"
+    ],
+    "cities": [
+      "Bengaluru",
+      "Mysuru",
+      "Tumakuru",
+      "Hassan"
+    ],
+    "verified": true
+  },
+  {
+    "id": 6,
+    "name": "BlueSky Solar Solutions",
+    "location": "Lucknow, Uttar Pradesh",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "rating": 4.6,
+    "reviews": 87,
+    "experience": 6,
+    "projectsCompleted": 410,
+    "minCapacity": 1,
+    "maxCapacity": 250,
+    "description": "Solar EPC and rooftop installation company serving homes, shops and small businesses.",
+    "services": [
+      "Rooftop Solar",
+      "Net Metering",
+      "Installation",
+      "AMC"
+    ],
+    "phone": "+91 9876543215",
+    "email": "info@blueskysolar.example",
+    "systemTypes": [
+      "Solar Rooftop",
+      "Commercial Solar"
+    ],
+    "projectTypes": [
+      "Residential",
+      "Commercial",
+      "Agricultural"
+    ],
+    "cities": [
+      "Lucknow",
+      "Kanpur",
+      "Agra",
+      "Varanasi"
+    ],
+    "verified": true
+  },
+  {
+    "id": 7,
+    "name": "SunGrid Power",
+    "location": "Hyderabad, Telangana",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "rating": 4.7,
+    "reviews": 105,
+    "experience": 8,
+    "projectsCompleted": 600,
+    "minCapacity": 5,
+    "maxCapacity": 600,
+    "description": "Commercial and industrial solar solutions provider with expertise in large rooftop systems.",
+    "services": [
+      "Industrial Solar",
+      "Commercial Solar",
+      "EPC",
+      "Monitoring"
+    ],
+    "phone": "+91 9876543216",
+    "email": "sales@sungridpower.example",
+    "systemTypes": [
+      "Commercial Solar",
+      "Industrial Solar",
+      "Ground Mounted"
+    ],
+    "projectTypes": [
+      "Commercial",
+      "Industrial"
+    ],
+    "cities": [
+      "Hyderabad",
+      "Warangal",
+      "Nizamabad",
+      "Karimnagar"
+    ],
+    "verified": true
+  }
+]
