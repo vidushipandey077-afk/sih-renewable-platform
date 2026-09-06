@@ -38,6 +38,24 @@
   gap: 16px;
 }
 
+.vendor-card{
+  width: calc(50% - 53px);
+  margin: 16px auto 0;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+
+.vendor-card span{
+
+  width: 35px;
+  
+}
+
 .module-card {
   background: #F6F4EF;
   border: 1px solid #E4DFD5;
