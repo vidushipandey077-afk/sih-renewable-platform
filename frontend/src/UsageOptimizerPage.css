@@ -1,0 +1,295 @@
+.optimizer-page-container {
+  max-width: 860px;
+  margin: 32px auto;
+  padding: 0 16px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #E2E8F0;
+}
+
+.optimizer-back-btn {
+  background: transparent;
+  border: none;
+  color: #8A999E;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.optimizer-back-btn:hover {
+  color: #FFFFFF;
+}
+
+.optimizer-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.optimizer-page-title {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 10px 0;
+}
+
+.optimizer-page-subtitle {
+  font-size: 14px;
+  color: #9EABB0;
+  margin: 0 auto;
+  max-width: 680px;
+  line-height: 1.5;
+}
+
+.optimizer-card {
+  background: #1A2327;
+  border: 1px solid #2B3A40;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.optimizer-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  align-items: end;
+}
+
+.optimizer-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.optimizer-form-field label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #C2D1D6;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.optimizer-form-field input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #0E1619;
+  border: 1px solid #33444C;
+  color: #FFFFFF;
+  font-size: 14px;
+  outline: none;
+}
+
+.optimizer-form-field input:focus {
+  border-color: #10B981;
+}
+
+.optimizer-submit-btn {
+  padding: 11px 16px;
+  background: #10B981;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  height: 42px;
+  transition: background 0.2s ease;
+}
+
+.optimizer-submit-btn:hover {
+  background: #059669;
+}
+
+/* Appliances Section */
+.appliances-config-section {
+  background: #151D21;
+  border: 1px solid #28373E;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 6px 0;
+}
+
+.section-desc {
+  font-size: 13px;
+  color: #8A999E;
+  margin: 0 0 18px 0;
+}
+
+.appliances-table-wrapper {
+  overflow-x: auto;
+}
+
+.appliances-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.appliances-table th {
+  background: #0F171A;
+  color: #7F939B;
+  padding: 10px 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  border-bottom: 1px solid #233137;
+}
+
+.appliances-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #1E2B30;
+}
+
+.font-semibold {
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.text-muted {
+  color: #8A999E;
+}
+
+.toggle-flex-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-flexible {
+  background: #1E3A2F;
+  color: #6EE7B7;
+  border: 1px solid #285443;
+}
+
+.btn-fixed {
+  background: #272F33;
+  color: #8A999E;
+  border: 1px solid #36444A;
+}
+
+/* KPI Cards */
+.optimizer-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.optimizer-kpi-card {
+  background: #172024;
+  border: 1px solid #2A383E;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kpi-label {
+  font-size: 11px;
+  color: #8A999E;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.kpi-value {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.kpi-subtext {
+  font-size: 11px;
+  color: #6C7D82;
+}
+
+.text-accent { color: #60A5FA; }
+.text-success { color: #10B981; }
+.text-warning { color: #FBBF24; }
+.text-primary { color: #A78BFA; }
+
+/* Schedule Card */
+.schedule-recommendations-card {
+  background: #172024;
+  border: 1px solid #2A383E;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 16px 0;
+}
+
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rec-item {
+  background: #111A1D;
+  border: 1px solid #233238;
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rec-badge {
+  align-self: flex-start;
+  font-size: 10px;
+  font-weight: 700;
+  background: #163228;
+  color: #34D399;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.rec-app-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.rec-action-text {
+  font-size: 13px;
+  color: #CBD5E1;
+  margin: 4px 0;
+}
+
+.rec-impact {
+  font-size: 12px;
+  color: #10B981;
+  font-weight: 500;
+}
+.optimizer-form-field input::placeholder {
+  color: #556970;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.no-shifts-text {
+  font-size: 13px;
+  color: #8A999E;
+  margin: 0;
+  font-style: italic;
+}
